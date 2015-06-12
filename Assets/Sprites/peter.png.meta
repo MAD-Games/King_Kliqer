@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: a44d767e42f1243b8b3171103611abab
+timeCreated: 1434075267
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: peter_0
+    21300002: peter_1
+    21300004: peter_2
+    21300006: peter_3
+    21300008: peter_4
+    21300010: peter_5
+    21300012: peter_6
+    21300014: peter_7
+    21300016: peter_8
+    21300018: peter_9
+    21300020: peter_10
+    21300022: peter_11
+    21300024: peter_12
+    21300026: peter_13
+    21300028: peter_14
+    21300030: peter_15
+    21300032: peter_16
+    21300034: peter_17
+    21300036: peter_18
+    21300038: peter_19
+    21300040: peter_20
+    21300042: peter_21
+    21300044: peter_22
+    21300046: peter_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: peter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_2
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_3
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_4
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_5
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_6
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_7
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_8
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_9
+      rect:
+        serializedVersion: 2
+        x: 3006
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_10
+      rect:
+        serializedVersion: 2
+        x: 3340
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_11
+      rect:
+        serializedVersion: 2
+        x: 3674
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_12
+      rect:
+        serializedVersion: 2
+        x: 4008
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_13
+      rect:
+        serializedVersion: 2
+        x: 4342
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_14
+      rect:
+        serializedVersion: 2
+        x: 4676
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_15
+      rect:
+        serializedVersion: 2
+        x: 5010
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_16
+      rect:
+        serializedVersion: 2
+        x: 5344
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_17
+      rect:
+        serializedVersion: 2
+        x: 5678
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_18
+      rect:
+        serializedVersion: 2
+        x: 6012
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_19
+      rect:
+        serializedVersion: 2
+        x: 6346
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_20
+      rect:
+        serializedVersion: 2
+        x: 6680
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_21
+      rect:
+        serializedVersion: 2
+        x: 7014
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_22
+      rect:
+        serializedVersion: 2
+        x: 7348
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: peter_23
+      rect:
+        serializedVersion: 2
+        x: 7682
+        y: 0
+        width: 334
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WearHat.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ItemManager.cs" Line="20" Column="46" />
+      <File FileName="Assets/Scripts/GoldPerSec.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UpgradeManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ChestTapScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/WearHat.cs" Line="19" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Scripts" expanded="True" />
+            <Node name="WearHat.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
