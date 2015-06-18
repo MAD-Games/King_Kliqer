@@ -1,5 +1,6 @@
-﻿using UnityEngine;
+﻿using UnityEngine.UI;
 using System.Collections;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 	
@@ -9,6 +10,14 @@ public class GameManager : MonoBehaviour {
 	//public GameObject panel2;
 	private ItemManager itemManager;
 	private UpgradeManager upgradeManager;
+	Image food;
+	Image hat;
+	public Sprite FoodOn;
+	public Sprite FoodOff;
+	public Sprite HatOn;
+	public Sprite HatOff;
+
+	private Sprite UIImageHat;
 	private bool panelHats = false;
 	private bool panelFood = false;
 	
@@ -19,6 +28,8 @@ public class GameManager : MonoBehaviour {
 	// Food counters
 	public int breadFood;
 	public int meatFood;
+
+	//public Sprite image;
 	
 	// Player Stats
 	public int fatPercent = 0;
@@ -27,6 +38,8 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject panelInfo1;
 	public GameObject panelInfo2;
+	public GameObject foodButton;
+	public GameObject hatButton;
 
 	public int upgradeCount;
 	public int clickTotal;
@@ -40,7 +53,8 @@ public class GameManager : MonoBehaviour {
 		} else if (manager != this) {
 			Destroy (gameObject);
 		}
-
+		food = foodButton.GetComponent<Image> ();
+		hat = hatButton.GetComponent<Image> ();
 
 	}
 	
@@ -72,7 +86,8 @@ public class GameManager : MonoBehaviour {
 	{
 		if (panelFood == false && panelHats == true) 
 		{
-
+			food.sprite = FoodOn;
+			hat.sprite = HatOff;
 			panelInfo2.gameObject.SetActive(false);
 			panelInfo1.gameObject.SetActive(true);
 			panelFood = true;
@@ -80,12 +95,14 @@ public class GameManager : MonoBehaviour {
 		} 
 		else if (panelFood == true) 
 		{
+			food.sprite = FoodOff;
 			panelFood = false;
 			panelInfo1.gameObject.SetActive(false);
 			
 		}
 		else if (panelFood == false) 
 		{
+			food.sprite = FoodOn;
 			panelFood = true;
 			panelInfo1.gameObject.SetActive(true);
 			
@@ -95,17 +112,21 @@ public class GameManager : MonoBehaviour {
 	{
 		if (panelFood == true && panelHats == false) 
 		{
+			hat.sprite = HatOn;
+			food.sprite = FoodOff;
 			panelInfo1.gameObject.SetActive(false);
 			panelInfo2.gameObject.SetActive(true);
 			panelHats = true;
 		} 
 		else if (panelHats == true) 
 		{
+			hat.sprite = HatOff;
 			panelHats = false;
 			panelInfo2.gameObject.SetActive(false);
 		}
 		else if (panelHats == false) 
 		{
+			hat.sprite = HatOn;
 			panelHats = true;
 			panelInfo2.gameObject.SetActive(true);
 		}
