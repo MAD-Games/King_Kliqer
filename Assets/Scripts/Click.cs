@@ -10,7 +10,7 @@ public class Click : MonoBehaviour {
 	public int GoldPerClick = 0;
 
 	void Update (){
-		GoldDisplay.text = "Gold: " + Gold.ToString("F0");
+		GoldDisplay.text = Gold.ToString("F0");
 		GPC.text = GoldPerClick + " gold/click";
 	}
 

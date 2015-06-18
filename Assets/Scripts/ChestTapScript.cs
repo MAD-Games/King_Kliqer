@@ -22,7 +22,7 @@ public class ChestTapScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		goldDisplay.text = "Gold: " + GameManager.FormatNumber(gameManager.currentGold);
+		goldDisplay.text = GameManager.FormatNumber(gameManager.currentGold);
 		GPCText.text = GameManager.FormatNumber(goldPerClick) + " gold/click";
 	}
 
