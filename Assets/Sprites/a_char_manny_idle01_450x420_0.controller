@@ -13,7 +13,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -26,7 +26,7 @@ AnimatorController:
     m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_MultiThreadedStateMachine: 1
 --- !u!1101 &110127308
 AnimatorStateTransition:
@@ -44,10 +44,10 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: .149999991
+  m_TransitionDuration: .255691081
   m_TransitionOffset: 0
-  m_ExitTime: .850000024
-  m_HasExitTime: 1
+  m_ExitTime: .496829242
+  m_HasExitTime: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
@@ -64,12 +64,12 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: .149999991
+  m_TransitionDuration: .00999999978
   m_TransitionOffset: 0
-  m_ExitTime: .850000024
+  m_ExitTime: 0
   m_HasExitTime: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
+  m_InterruptionSource: 3
+  m_OrderedInterruption: 0
   m_CanTransitionToSelf: 1
 --- !u!1102 &110242526
 AnimatorState:
@@ -78,7 +78,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MannyIdle
-  m_Speed: 2
+  m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110127308}
@@ -96,7 +96,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MannyClick
-  m_Speed: 3
+  m_Speed: 5.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110192772}
