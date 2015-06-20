@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a44d767e42f1243b8b3171103611abab
-timeCreated: 1434075267
+timeCreated: 1434765942
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -81,7 +81,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_1
       rect:
@@ -91,7 +91,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_2
       rect:
@@ -101,7 +101,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_3
       rect:
@@ -111,7 +111,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_4
       rect:
@@ -121,7 +121,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_5
       rect:
@@ -131,7 +131,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_6
       rect:
@@ -141,7 +141,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_7
       rect:
@@ -151,7 +151,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_8
       rect:
@@ -161,7 +161,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_9
       rect:
@@ -171,7 +171,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_10
       rect:
@@ -181,7 +181,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_11
       rect:
@@ -191,7 +191,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_12
       rect:
@@ -201,7 +201,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_13
       rect:
@@ -211,7 +211,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_14
       rect:
@@ -221,7 +221,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_15
       rect:
@@ -231,7 +231,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_16
       rect:
@@ -241,7 +241,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_17
       rect:
@@ -251,7 +251,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_18
       rect:
@@ -261,7 +261,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_19
       rect:
@@ -271,7 +271,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_20
       rect:
@@ -281,7 +281,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_21
       rect:
@@ -291,7 +291,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_22
       rect:
@@ -301,7 +301,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: peter_23
       rect:
@@ -311,7 +311,7 @@ TextureImporter:
         width: 334
         height: 755
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

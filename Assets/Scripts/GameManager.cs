@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour {
 			meatFood = GameObject.Find ("Meat").GetComponent<UpgradeManager> ().count;
 		}
 		upgradeCount = barrelHat + hotdogHat + breadFood + meatFood;
+		//Debug.Log (1.0f / Time.deltaTime);
 	}
 	public static string FormatNumber(float flt) {
 		int num = (int)Mathf.Ceil (flt);
