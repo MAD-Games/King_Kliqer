@@ -22,7 +22,7 @@ public class StartGame : MonoBehaviour {
 	{
 		//Destroy (gameObject.Find ("Main Camera"));
 		DestroyImmediate(Camera.main.gameObject);
-		Application.LoadLevel ("title");
+		Application.LoadLevel ("title-new");
 
 	}
 

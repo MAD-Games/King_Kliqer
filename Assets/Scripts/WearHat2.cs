@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WearHat : MonoBehaviour {
+public class WearHat2 : MonoBehaviour {
 
-	private string icon;
+	public bool hat2On;
 	
-	// Use this for initialization
-	void Start () {	
-	}
-	
+
+	// Update is called once per frame
 	void OnMouseDown() {
 		Sprite sprite = GetComponent<SpriteRenderer>().sprite;
 		GameObject.Find ("CurrentHat").GetComponent<SpriteRenderer> ().sprite = sprite;
+		if (Input.GetMouseButtonDown (0)) {
+			hat2On = true;
+		}
 	}
 }

@@ -23,11 +23,13 @@ public class GameManager : MonoBehaviour {
 	
 	// Hat counters
 	public int barrelHat;
-	public int hotdogHat;
+	public int mimiHat;
+	public int jackHat;
 	
 	// Food counters
-	public int breadFood;
-	public int meatFood;
+	public int boneFood;
+	public int cheeseFood;
+	public int grapeFood;
 
 	//public Sprite image;
 	
@@ -62,12 +64,14 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		if (panelInfo2.gameObject.activeInHierarchy == true) {
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
-			hotdogHat = GameObject.Find ("Hotdog").GetComponent<ItemManager> ().count;
+			mimiHat = GameObject.Find ("Nack mimi").GetComponent<ItemManager> ().count;
+			jackHat = GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count;
 		} else if (panelInfo1.gameObject.activeInHierarchy == true) {
-			breadFood = GameObject.Find ("Bread").GetComponent<UpgradeManager> ().count;
-			meatFood = GameObject.Find ("Meat").GetComponent<UpgradeManager> ().count;
+			cheeseFood = GameObject.Find ("Cheese").GetComponent<UpgradeManager> ().count;
+			boneFood = GameObject.Find ("Bone").GetComponent<UpgradeManager> ().count;
+			grapeFood = GameObject.Find ("Grapes").GetComponent<UpgradeManager> ().count;
 		}
-		upgradeCount = barrelHat + hotdogHat + breadFood + meatFood;
+		upgradeCount = barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood;
 		//Debug.Log (1.0f / Time.deltaTime);
 	}
 	public static string FormatNumber(float flt) {
