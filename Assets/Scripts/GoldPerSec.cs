@@ -21,7 +21,7 @@ public class GoldPerSec : MonoBehaviour {
 	public float GetGoldPerSec(){
 		float tick = 0;
 		foreach (ItemManager item in items) {
-			tick += item.count * item.TickValue;
+			tick += item.count * item.tickValue;
 		}
 		return tick;
 	}

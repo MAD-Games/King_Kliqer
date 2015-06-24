@@ -10,7 +10,7 @@ GameObject:
   - 224: {fileID: 22496872}
   - 222: {fileID: 22266748}
   - 114: {fileID: 11487114}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 22489858}
   - 114: {fileID: 11418282}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - 224: {fileID: 22496498}
   - 222: {fileID: 22271750}
   - 114: {fileID: 11457696}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22423418}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - 4: {fileID: 460772}
   - 212: {fileID: 21262672}
   m_Layer: 0
-  m_Name: MeatIcon
+  m_Name: BoneIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,7 +91,7 @@ GameObject:
   - 224: {fileID: 22431450}
   - 222: {fileID: 22293312}
   - 114: {fileID: 11448280}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - 224: {fileID: 22404020}
   - 222: {fileID: 22204884}
   - 114: {fileID: 11493156}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22411820}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - 114: {fileID: 11468248}
   - 114: {fileID: 11443336}
   - 114: {fileID: 11488380}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Meat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,8 +156,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -64.3000031, y: 26.7000008, z: -3816}
-  m_LocalScale: {x: 12.7200003, y: 12.7200003, z: 42.3999977}
+  m_LocalPosition: {x: -35, y: 18, z: -2}
+  m_LocalScale: {x: 30, y: 30, z: 42.3999977}
   m_Children: []
   m_Father: {fileID: 22474864}
   m_RootOrder: 2
@@ -303,12 +303,12 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Meat
+  m_Text: Bone
 --- !u!114 &11468248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,9 +321,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .516111612, g: .632352948, b: .632352948, a: .607843161}
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: .607843161}
+  m_Sprite: {fileID: 21300000, guid: bfd860807bbc60246ad58b8da481ddb3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -366,9 +366,9 @@ MonoBehaviour:
   cost: 30
   count: 0
   fatGain: 5
-  ItemName: Meat
-  Standard: {r: .478431404, g: .572549045, b: .552941203, a: .607843161}
-  Affordable: {r: .272491336, g: .882352948, b: .882352948, a: .607843161}
+  ItemName: Bone
+  Standard: {r: .867647052, g: .867647052, b: .867647052, a: .607843161}
+  Affordable: {r: 1, g: 1, b: 1, a: .607843161}
   SliderColor: {fileID: 0}
   levelUp: {fileID: 0}
 --- !u!114 &11493156
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .3921929, g: .683823526, b: .683823526, a: .607843161}
+  m_Color: {r: 1, g: 1, b: 1, a: .607843161}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -416,7 +416,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: ab1e6cf76006241abbdf5aed28a86c8f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: faeb926dff37b1d4a8983c2c5310d2e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!222 &22204884
 CanvasRenderer:
@@ -535,8 +535,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 306, y: -50}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchoredPosition: {x: 245, y: -75}
+  m_SizeDelta: {x: 150, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22489858
 RectTransform:
@@ -555,8 +555,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 100}
+  m_AnchoredPosition: {x: 2.5, y: 0}
+  m_SizeDelta: {x: -35, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22496498
 RectTransform:
@@ -572,8 +572,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -7.5, y: 0}
+  m_SizeDelta: {x: -15, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22496872
 RectTransform:

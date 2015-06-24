@@ -8,9 +8,11 @@ public class UpgradeManager : MonoBehaviour {
 	private GameManager gameManager;
 	private ChestTapScript chestTap;
 	public Text iteminfo;
+	public Text itemCost;
+	public Text goldPerClick;
 	public float cost;
 	public int count;
-	public int fatGain;
+	public int gPC;
 	public string ItemName;
 	private float baseCost;
 	public Color Standard;
@@ -22,11 +24,15 @@ public class UpgradeManager : MonoBehaviour {
 		chestTap = GameObject.Find ("Chest").GetComponent<ChestTapScript> ();
 		gameManager = GameObject.Find ("Main Camera").GetComponent<GameManager> ();
 		levelUp = GameObject.Find ("Main Camera").GetComponent<AudioSource> ();
+
 		baseCost = cost;
 		SliderColor = GetComponentInChildren<Slider> ();
 	}
 	void Update(){
-		iteminfo.text = ItemName + "\nCost: " + GameManager.FormatNumber(cost) + "\nConsumed: (" + count + ")" + "\n+Fat%: " + fatGain;
+		iteminfo.text = ItemName + " (" + count + ")";
+		itemCost.text = GameManager.FormatNumber (cost);
+		goldPerClick.text = "Fat%: " + gPC;
+
 		/*if (Click.Gold >= Cost) {
 			GetComponent<Image> ().color = Affordable;
 		} else {
@@ -44,7 +50,7 @@ public class UpgradeManager : MonoBehaviour {
 		if (gameManager.currentGold >= cost) {
 			gameManager.currentGold -= cost;
 			count += 1;
-			chestTap.goldPerClick += fatGain;
+			chestTap.goldPerClick += gPC;
 			cost = Mathf.Round (baseCost * Mathf.Pow(1.15f, count));
 			levelUp.Play();
 

@@ -5,10 +5,13 @@ using UnityEngine.UI;
 public class ItemManager : MonoBehaviour {
 
 	public Text itemInfo;
+	public Text itemCost;
+	public Text goldIncome;
 	private GameManager gameManager;
+	private CurrentHat currentHat;
 	public Sprite[] icons;
 	public float Cost;
-	public int TickValue;
+	public int tickValue;
 	public int count;
 	public string itemName;
 	private float baseCost;
@@ -24,7 +27,10 @@ public class ItemManager : MonoBehaviour {
 	}
 
 	void Update(){
-		itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + TickValue + " gold/s";
+		itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + tickValue + " gold/s";
+		//itemInfo.text = itemName + " (" + count + ")";
+		//itemCost.text = GameManager.FormatNumber (Cost);
+		//goldIncome.text = "Income: " + tickValue;
 		/*if (Click.Gold >= Cost) {
 			GetComponent<Image> ().color = Affordable;
 		} else {
