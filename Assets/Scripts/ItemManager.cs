@@ -27,10 +27,10 @@ public class ItemManager : MonoBehaviour {
 	}
 
 	void Update(){
-		itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + tickValue + " gold/s";
-		//itemInfo.text = itemName + " (" + count + ")";
-		//itemCost.text = GameManager.FormatNumber (Cost);
-		//goldIncome.text = "Income: " + tickValue;
+		//itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + tickValue + " gold/s";
+		itemInfo.text = itemName + " (" + count + ")";
+		itemCost.text = GameManager.FormatNumber (Cost);
+		goldIncome.text = "Income: " + tickValue;
 		/*if (Click.Gold >= Cost) {
 			GetComponent<Image> ().color = Affordable;
 		} else {
