@@ -2320,7 +2320,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -2.29999995
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_SizeDelta.x
@@ -2328,7 +2328,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11497084, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_FontData.m_Alignment
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 150500, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_Layer
@@ -2381,7 +2381,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 56.0999985
+      value: 41.5499992
       objectReference: {fileID: 0}
     - target: {fileID: 11428228, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: icons.Array.data[0]
@@ -2555,6 +2555,10 @@ Prefab:
     - target: {fileID: 22404544, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_SizeDelta.y
       value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -29.1000004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
@@ -3175,15 +3179,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -25.2000008
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_SizeDelta.x
-      value: -15
+      value: -45
       objectReference: {fileID: 0}
     - target: {fileID: 11497084, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_FontData.m_Alignment
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 150500, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_Layer
@@ -3236,7 +3240,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 56.0999985
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 11428228, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: icons.Array.data[0]
@@ -3410,6 +3414,10 @@ Prefab:
     - target: {fileID: 22404544, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_SizeDelta.y
       value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -67
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
@@ -3617,7 +3625,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -2.5999999
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_SizeDelta.x
@@ -3625,7 +3633,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11497084, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_FontData.m_Alignment
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 150500, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_Layer
@@ -3678,7 +3686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 56.0999985
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 11428228, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: icons.Array.data[0]
@@ -3852,6 +3860,10 @@ Prefab:
     - target: {fileID: 22404544, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_SizeDelta.y
       value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437848, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
