@@ -114,12 +114,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3.5, y: 1, z: 1}
   m_Children:
+  - {fileID: 1103410733}
   - {fileID: 1357650340}
   m_Father: {fileID: 482981610}
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -8, y: 334}
+  m_AnchoredPosition: {x: 1, y: 334}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &105235054
@@ -245,6 +246,8 @@ GameObject:
   - 222: {fileID: 155945188}
   - 114: {fileID: 155945187}
   - 114: {fileID: 155945186}
+  - 212: {fileID: 155945190}
+  - 95: {fileID: 155945189}
   m_Layer: 0
   m_Name: Hat upgrades button
   m_TagString: Untagged
@@ -350,6 +353,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 155945184}
+--- !u!95 &155945189
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155945184}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98d45a02a216e5f45890d3bd2dd63304, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &155945190
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155945184}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &260409691
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,15 +563,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -132.948578
+      value: -125.699997
       objectReference: {fileID: 0}
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -59.2210083
+      value: -59
       objectReference: {fileID: 0}
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -19.8727322
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 416520, guid: a2cdbc5b8ae7d4692a3577aca92e8d19, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1140,7 +1186,6 @@ RectTransform:
   - {fileID: 828814883}
   - {fileID: 2078442113}
   - {fileID: 105235053}
-  - {fileID: 1103410733}
   - {fileID: 1550623465}
   m_Father: {fileID: 1999528344}
   m_RootOrder: 1
@@ -1957,7 +2002,7 @@ MonoBehaviour:
   iteminfo: {fileID: 2081629357}
   itemCost: {fileID: 997087214}
   goldPerClick: {fileID: 1598775062}
-  cost: 5000
+  cost: 500
   count: 0
   gPC: 20
   gpcDisplay: 0
@@ -3046,11 +3091,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1103410731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -94, y: 338, z: -20}
-  m_LocalScale: {x: 55, y: 55, z: 19.8727322}
+  m_LocalPosition: {x: -38.7999992, y: 4, z: -20}
+  m_LocalScale: {x: 15.7142859, y: 55, z: 19.8727322}
   m_Children: []
-  m_Father: {fileID: 482981610}
-  m_RootOrder: 5
+  m_Father: {fileID: 105235053}
+  m_RootOrder: 0
 --- !u!1001 &1124313736
 Prefab:
   m_ObjectHideFlags: 0
@@ -3236,7 +3281,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 171396, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_Name
-      value: Nack(o)mimiIcon
+      value: Cat EarsIcon
       objectReference: {fileID: 0}
     - target: {fileID: 11497544, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_Sprite
@@ -3682,7 +3727,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 171396, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_Name
-      value: Jack'oIcon
+      value: Top HatIcon
       objectReference: {fileID: 0}
     - target: {fileID: 11497544, guid: f14c49dc5bcc44f758453ae75eaaa5a6, type: 2}
       propertyPath: m_Sprite
@@ -4062,7 +4107,7 @@ RectTransform:
   m_LocalScale: {x: .285714269, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 105235053}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
   m_AnchoredPosition: {x: .285714149, y: -48}
@@ -4192,6 +4237,8 @@ GameObject:
   - 114: {fileID: 1422583931}
   - 82: {fileID: 1422583932}
   - 82: {fileID: 1422583933}
+  - 212: {fileID: 1422583935}
+  - 95: {fileID: 1422583934}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4431,6 +4478,49 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!95 &1422583934
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422583925}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09827a8b8a0dc3748af96fed3721e91c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1422583935
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422583925}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1454534365
 GameObject:
   m_ObjectHideFlags: 0
@@ -4805,7 +4895,7 @@ RectTransform:
   m_LocalScale: {x: .505500019, y: .129999995, z: 1}
   m_Children: []
   m_Father: {fileID: 482981610}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -.699999988, y: 187}
@@ -6398,6 +6488,8 @@ GameObject:
   - 114: {fileID: 1999528345}
   - 222: {fileID: 1999528349}
   - 114: {fileID: 1999528348}
+  - 212: {fileID: 1999528351}
+  - 95: {fileID: 1999528350}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -6513,6 +6605,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1999528343}
+--- !u!95 &1999528350
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999528343}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d436c158d0bf503488d142f3974e39d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &1999528351
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999528343}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2025092096
 GameObject:
   m_ObjectHideFlags: 0
