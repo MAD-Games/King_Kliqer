@@ -1959,7 +1959,8 @@ MonoBehaviour:
   goldPerClick: {fileID: 1598775062}
   cost: 5000
   count: 0
-  gPC: 200
+  gPC: 20
+  gpcDisplay: 0
   ItemName: Grapes
   Standard: {r: .897058845, g: .897058845, b: .897058845, a: .607843161}
   Affordable: {r: 1, g: 1, b: 1, a: .607843161}
@@ -2585,7 +2586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &942097139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4587,6 +4588,7 @@ MonoBehaviour:
   cost: 10
   count: 0
   gPC: 1
+  gpcDisplay: 0
   ItemName: Bone
   Standard: {r: .897058845, g: .897058845, b: .897058845, a: .607843161}
   Affordable: {r: 1, g: 1, b: 1, a: .607843161}
@@ -4958,9 +4960,10 @@ MonoBehaviour:
   iteminfo: {fileID: 1747690065}
   itemCost: {fileID: 1859379336}
   goldPerClick: {fileID: 1558949027}
-  cost: 10
+  cost: 5000
   count: 0
-  gPC: 1
+  gPC: 50
+  gpcDisplay: 0
   ItemName: Cheese
   Standard: {r: .897058845, g: .897058845, b: .897058845, a: .607843161}
   Affordable: {r: 1, g: 1, b: 1, a: .607843161}

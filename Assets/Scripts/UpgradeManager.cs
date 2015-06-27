@@ -13,6 +13,7 @@ public class UpgradeManager : MonoBehaviour {
 	public float cost;
 	public int count;
 	public int gPC;
+	public float gpcDisplay;
 	public string ItemName;
 	private float baseCost;
 	public Color Standard;
@@ -24,14 +25,16 @@ public class UpgradeManager : MonoBehaviour {
 		chestTap = GameObject.Find ("Chest").GetComponent<ChestTapScript> ();
 		gameManager = GameObject.Find ("Main Camera").GetComponent<GameManager> ();
 		levelUp = this.GetComponent<AudioSource> ();
-
+		gpcDisplay = gPC / (float)1000;
 		baseCost = cost;
 		SliderColor = GetComponentInChildren<Slider> ();
 	}
 	void Update(){
+
+		//Debug.Log (gpcDisplay);
 		iteminfo.text = ItemName + " (" + count + ")";
 		itemCost.text = GameManager.FormatNumber (cost);
-		goldPerClick.text = "Fat%: " + gPC;
+		goldPerClick.text = "Fat%: " + gpcDisplay;
 
 		/*if (Click.Gold >= Cost) {
 			GetComponent<Image> ().color = Affordable;
