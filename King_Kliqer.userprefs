@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CurrentHat.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UpgradeManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\CurrentHat.cs" Line="26" Column="22" />
+      <File FileName="Assets\Scripts\UpgradeManager.cs" Line="55" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
