@@ -18,12 +18,12 @@ public class UpgradeManager : MonoBehaviour {
 	public Color Standard;
 	public Color Affordable;
 	public Slider SliderColor;
-	public AudioSource levelUp;
+	AudioSource levelUp;
 
 	void Start(){
 		chestTap = GameObject.Find ("Chest").GetComponent<ChestTapScript> ();
 		gameManager = GameObject.Find ("Main Camera").GetComponent<GameManager> ();
-		levelUp = GameObject.Find ("Main Camera").GetComponent<AudioSource> ();
+		levelUp = this.GetComponent<AudioSource> ();
 
 		baseCost = cost;
 		SliderColor = GetComponentInChildren<Slider> ();
@@ -53,7 +53,6 @@ public class UpgradeManager : MonoBehaviour {
 			chestTap.goldPerClick += gPC;
 			cost = Mathf.Round (baseCost * Mathf.Pow(1.15f, count));
 			levelUp.Play();
-
 		}
 	}
 }
