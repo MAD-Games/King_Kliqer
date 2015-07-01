@@ -605,7 +605,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 274179025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 2, y: .17699115, z: 1}
   m_Children:
   - {fileID: 767192265}
@@ -831,6 +831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8791d1892f4244d92412a8a877c907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuDown: 0
 --- !u!114 &306819799
 MonoBehaviour:
   m_ObjectHideFlags: 0
