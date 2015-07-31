@@ -58,10 +58,23 @@ public class GameManager : MonoBehaviour {
 		food = foodButton.GetComponent<Image> ();
 		hat = hatButton.GetComponent<Image> ();
 
+		if (PlayerPrefs.HasKey ("gold")) {
+			currentGold = PlayerPrefs.GetFloat ("gold");
+		} else {
+			currentGold = 0.00f;
+		}
+		if (PlayerPrefs.HasKey ("hat1")) {
+			//GameObject.Find ("Barrel").GetComponent<ItemManager> ().count = PlayerPrefs.GetInt ("hat1");
+			barrelHat = PlayerPrefs.GetInt ("hat1");
+		} else {
+		//	GameObject.Find ("Barrel").GetComponent<ItemManager> ().count = 0;
+			barrelHat = 0;
+		}
 	}
-	
 	// Update is called once per frame
 	void Update () {
+		PlayerPrefs.SetFloat ("gold", currentGold);
+		//PlayerPrefs.SetInt ("hat1", barrelHat);
 		if (panelInfo2.gameObject.activeInHierarchy == true) {
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
 			mimiHat = GameObject.Find ("Nack mimi").GetComponent<ItemManager> ().count;

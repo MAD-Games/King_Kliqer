@@ -28,8 +28,17 @@ public class UpgradeManager : MonoBehaviour {
 		gpcDisplay = gPC / (float)1000;
 		baseCost = cost;
 		SliderColor = GetComponentInChildren<Slider> ();
+
+		if (PlayerPrefs.HasKey (ItemName)) {
+				count = PlayerPrefs.GetInt (ItemName);
+				cost = PlayerPrefs.GetFloat(ItemName + " Cost");
+		} else {
+			
+		}
 	}
 	void Update(){
+		PlayerPrefs.SetInt (ItemName, count);
+		PlayerPrefs.SetFloat(ItemName + " Cost", cost);
 
 		//Debug.Log (gpcDisplay);
 		iteminfo.text = ItemName + " (" + count + ")";

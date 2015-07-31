@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\GoldPerSec.cs" />
      <Compile Include="Assets\Scripts\ItemManager.cs" />
      <Compile Include="Assets\Scripts\PopupScript.cs" />
+     <Compile Include="Assets\Scripts\Save script.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\UpgradeManager.cs" />
      <Compile Include="Assets\Scripts\WearHat1.cs" />

@@ -24,9 +24,16 @@ public class ItemManager : MonoBehaviour {
 		gameManager = GameObject.Find ("Main Camera").GetComponent<GameManager> ();
 		baseCost = Cost;
 		ColorChange = GetComponentInChildren<Slider> ();
+		if (PlayerPrefs.HasKey (itemName)) {
+			count = PlayerPrefs.GetInt ("hat" + itemName);
+			Cost = PlayerPrefs.GetFloat("hat" + itemName + " Cost");
+		} 
 	}
 
 	void Update(){
+		PlayerPrefs.SetInt ("hat" + itemName, count);
+		PlayerPrefs.SetFloat("hat" + itemName + " Cost", Cost);
+
 		//itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + tickValue + " gold/s";
 		itemInfo.text = itemName + " (" + count + ")";
 		itemCost.text = GameManager.FormatNumber (Cost);
