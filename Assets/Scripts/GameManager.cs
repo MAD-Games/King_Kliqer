@@ -102,53 +102,58 @@ public class GameManager : MonoBehaviour {
 	}
 	public void activatePanelFood()
 	{
-		if (panelFood == false && panelHats == true) 
+		if (panelHats == true) {
+			panelInfo2.gameObject.SetActive(false);
+			hat.sprite = HatOff;
+			panelHats = false;
+		}
+		if (panelFood == false) 
 		{
 			food.sprite = FoodOn;
-			hat.sprite = HatOff;
-			panelInfo2.gameObject.SetActive(false);
 			panelInfo1.gameObject.SetActive(true);
 			panelFood = true;
-			
-		} 
-		else if (panelFood == true) 
+			//StartCoroutine(TestCoroutine(1));
+			} 
+		else
 		{
 			food.sprite = FoodOff;
 			panelFood = false;
 			panelInfo1.gameObject.SetActive(false);
 			
 		}
-		else if (panelFood == false) 
-		{
-			food.sprite = FoodOn;
-			panelFood = true;
-			panelInfo1.gameObject.SetActive(true);
-			
-		}
+	
 	}
 	public void activatePanelHats()
 	{
-		if (panelFood == true && panelHats == false) 
+		if (panelFood == true) {
+			panelInfo1.gameObject.SetActive(false);
+			food.sprite = FoodOff;
+			panelFood = false;
+		}
+		if (panelHats == false) 
 		{
 			hat.sprite = HatOn;
-			food.sprite = FoodOff;
-			panelInfo1.gameObject.SetActive(false);
 			panelInfo2.gameObject.SetActive(true);
 			panelHats = true;
 		} 
-		else if (panelHats == true) 
+		else 
 		{
 			hat.sprite = HatOff;
 			panelHats = false;
 			panelInfo2.gameObject.SetActive(false);
 		}
-		else if (panelHats == false) 
-		{
-			hat.sprite = HatOn;
-			panelHats = true;
-			panelInfo2.gameObject.SetActive(true);
-		}
+
 		
 	}
+
+	IEnumerator TestCoroutine(int waitTime)
+	{
+
+
+			Debug.Log("TestCoroutine()");
+			yield return new WaitForSeconds(waitTime);
+
+	}
+
 
 }
