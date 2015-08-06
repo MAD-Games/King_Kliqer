@@ -8,7 +8,7 @@ public class ChestTapScript : MonoBehaviour {
 	public Text GPCText;
 	public Text goldDisplay;
 	public int goldPerClick = 0;
-	public int clickTotal;
+
 	public AudioSource chest;
 
 	// Use this for initialization

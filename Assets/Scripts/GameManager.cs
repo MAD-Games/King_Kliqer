@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour {
 	//public GameObject panel2;
 	private ItemManager itemManager;
 	private UpgradeManager upgradeManager;
+
+	//update stats menu
+	public TextMesh clickText;
+
 	Image food;
 	Image hat;
 	public Sprite FoodOn;
@@ -20,6 +24,7 @@ public class GameManager : MonoBehaviour {
 	private Sprite UIImageHat;
 	private bool panelHats = false;
 	private bool panelFood = false;
+	private bool gameStart = false;
 	
 	// Hat counters
 	public int barrelHat;
@@ -60,20 +65,31 @@ public class GameManager : MonoBehaviour {
 
 		if (PlayerPrefs.HasKey ("gold")) {
 			currentGold = PlayerPrefs.GetFloat ("gold");
+			clickTotal = PlayerPrefs.GetInt ("clicks");
 		} else {
 			currentGold = 0.00f;
 		}
-		if (PlayerPrefs.HasKey ("hat1")) {
-			//GameObject.Find ("Barrel").GetComponent<ItemManager> ().count = PlayerPrefs.GetInt ("hat1");
-			barrelHat = PlayerPrefs.GetInt ("hat1");
-		} else {
-		//	GameObject.Find ("Barrel").GetComponent<ItemManager> ().count = 0;
-			barrelHat = 0;
-		}
 	}
+
+
 	// Update is called once per frame
 	void Update () {
+		if (gameStart == false) {
+			gameStart = true;
+			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
+			mimiHat = GameObject.Find ("Nack mimi").GetComponent<ItemManager> ().count;
+			jackHat = GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count;
+			cheeseFood = GameObject.Find ("Cheese").GetComponent<UpgradeManager> ().count;
+			boneFood = GameObject.Find ("Bone").GetComponent<UpgradeManager> ().count;
+			grapeFood = GameObject.Find ("Grapes").GetComponent<UpgradeManager> ().count;
+			panelInfo1.gameObject.SetActive (false);
+			panelInfo2.gameObject.SetActive (false);
+			clickText.text = "Click Total: " + clickTotal;
+
+		}
+		PlayerPrefs.SetInt ("clicks", clickTotal);
 		PlayerPrefs.SetFloat ("gold", currentGold);
+		clickText.text = "Click Total: " + clickTotal;
 		//PlayerPrefs.SetInt ("hat1", barrelHat);
 		if (panelInfo2.gameObject.activeInHierarchy == true) {
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
