@@ -58,7 +58,7 @@ public class UpgradeManager : MonoBehaviour {
 		SliderColor.value = gameManager.currentGold / cost * 100;
 	}
 
-	public void PurchasedUpgrade(){
+	public void OnMouseDown(){
 		if (gameManager.currentGold >= cost) {
 			gameManager.currentGold -= cost;
 			count += 1;

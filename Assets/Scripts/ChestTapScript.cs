@@ -29,8 +29,10 @@ public class ChestTapScript : MonoBehaviour {
 	void OnMouseDown() {
 		anime.SetTrigger("Tap");
 		gameManager.currentGold += goldPerClick;
+		gameManager.totalGoldEarned += goldPerClick;
 		gameManager.clickTotal ++;
 		chest.Play ();
+
 	}
 
 	void playSound(){

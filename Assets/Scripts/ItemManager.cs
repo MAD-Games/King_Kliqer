@@ -25,14 +25,14 @@ public class ItemManager : MonoBehaviour {
 		baseCost = Cost;
 		ColorChange = GetComponentInChildren<Slider> ();
 		if (PlayerPrefs.HasKey (itemName)) {
-			count = PlayerPrefs.GetInt ("hat" + itemName);
-			Cost = PlayerPrefs.GetFloat("hat" + itemName + " Cost");
+			count = PlayerPrefs.GetInt (itemName + " hat: ");
+			Cost = PlayerPrefs.GetFloat(itemName + " hat Cost: ");
 		} 
 	}
 
 	void Update(){
-		PlayerPrefs.SetInt ("hat" + itemName, count);
-		PlayerPrefs.SetFloat("hat" + itemName + " Cost", Cost);
+		PlayerPrefs.SetInt (itemName + " hat: ", count);
+		PlayerPrefs.SetFloat(itemName + " hat Cost: ", Cost);
 
 		//itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + tickValue + " gold/s";
 		itemInfo.text = itemName + " (" + count + ")";
@@ -59,7 +59,7 @@ public class ItemManager : MonoBehaviour {
 		ColorChange.value = gameManager.currentGold / Cost * 100;
 	}
 
-	public void PurchasedItem(){
+	public void OnMouseDown(){
 		if (gameManager.currentGold >= Cost) {
 			gameManager.currentGold -= Cost;
 			count += 1;

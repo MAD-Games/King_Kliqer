@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
 
 	//update stats menu
 	public TextMesh clickText;
+	public TextMesh totalUpgrades;
+	public TextMesh totalGold;
 
 	Image food;
 	Image hat;
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour {
 	// Player Stats
 	public int fatPercent = 0;
 	public float currentGold = 0.00f;
+	public int totalGoldEarned;
 	// public int playerProgression = 0;
 
 	public GameObject panelInfo1;
@@ -66,6 +69,8 @@ public class GameManager : MonoBehaviour {
 		if (PlayerPrefs.HasKey ("gold")) {
 			currentGold = PlayerPrefs.GetFloat ("gold");
 			clickTotal = PlayerPrefs.GetInt ("clicks");
+			totalGoldEarned = PlayerPrefs.GetInt("totalGold");
+
 		} else {
 			currentGold = 0.00f;
 		}
@@ -85,11 +90,12 @@ public class GameManager : MonoBehaviour {
 			panelInfo1.gameObject.SetActive (false);
 			panelInfo2.gameObject.SetActive (false);
 			clickText.text = "Click Total: " + clickTotal;
+			totalUpgrades.text = "Total Upgrades: " + upgradeCount;
+			totalGold.text = "Total gold earned: " + totalGoldEarned;
 
 		}
-		PlayerPrefs.SetInt ("clicks", clickTotal);
-		PlayerPrefs.SetFloat ("gold", currentGold);
-		clickText.text = "Click Total: " + clickTotal;
+
+
 		//PlayerPrefs.SetInt ("hat1", barrelHat);
 		if (panelInfo2.gameObject.activeInHierarchy == true) {
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
@@ -101,6 +107,15 @@ public class GameManager : MonoBehaviour {
 			grapeFood = GameObject.Find ("Grapes").GetComponent<UpgradeManager> ().count;
 		}
 		upgradeCount = barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood;
+
+		PlayerPrefs.SetFloat ("gold", currentGold);
+		PlayerPrefs.SetInt ("totalGold", (int)totalGoldEarned);
+
+
+		clickText.text = "Click Total: " + clickTotal;
+		totalUpgrades.text = "Total Upgrades: " + upgradeCount;
+		totalGold.text = "Total gold earned: " + totalGoldEarned;
+
 		//Debug.Log (1.0f / Time.deltaTime);
 	}
 	public static string FormatNumber(float flt) {

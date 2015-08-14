@@ -28,6 +28,7 @@ public class GoldPerSec : MonoBehaviour {
 
 	public void AutoGoldPerSec(){
 		gameManager.currentGold += GetGoldPerSec() / 10;
+		gameManager.totalGoldEarned += (int)(GetGoldPerSec() / 10);
 	}
 
 	IEnumerator AutoTick(){
