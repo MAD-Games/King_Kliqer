@@ -25,14 +25,14 @@ public class ItemManager : MonoBehaviour {
 		baseCost = Cost;
 		ColorChange = GetComponentInChildren<Slider> ();
 		if (PlayerPrefs.HasKey (itemName)) {
-			count = PlayerPrefs.GetInt (itemName + " hat: ");
-			Cost = PlayerPrefs.GetFloat(itemName + " hat Cost: ");
+			count = PlayerPrefs.GetInt (itemName);
+			Cost = PlayerPrefs.GetFloat(itemName + "Cost");
 		} 
 	}
 
 	void Update(){
-		PlayerPrefs.SetInt (itemName + " hat: ", count);
-		PlayerPrefs.SetFloat(itemName + " hat Cost: ", Cost);
+		PlayerPrefs.SetInt (itemName, count);
+		PlayerPrefs.SetFloat(itemName + "Cost", Cost);
 
 		//itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + tickValue + " gold/s";
 		itemInfo.text = itemName + " (" + count + ")";

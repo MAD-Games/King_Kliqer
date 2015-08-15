@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour {
 	private Sprite UIImageHat;
 	private bool panelHats = false;
 	private bool panelFood = false;
-	private bool gameStart = false;
+	private bool gameStart;
 	
 	// Hat counters
 	public int barrelHat;
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
 	// Player Stats
 	public int fatPercent = 0;
 	public float currentGold = 0.00f;
-	public int totalGoldEarned;
+	public float totalGoldEarned = 0.00f;
 	// public int playerProgression = 0;
 
 	public GameObject panelInfo1;
@@ -69,7 +69,8 @@ public class GameManager : MonoBehaviour {
 		if (PlayerPrefs.HasKey ("gold")) {
 			currentGold = PlayerPrefs.GetFloat ("gold");
 			clickTotal = PlayerPrefs.GetInt ("clicks");
-			totalGoldEarned = PlayerPrefs.GetInt("totalGold");
+			totalGoldEarned = PlayerPrefs.GetFloat("totalGold");
+
 
 		} else {
 			currentGold = 0.00f;
@@ -109,7 +110,7 @@ public class GameManager : MonoBehaviour {
 		upgradeCount = barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood;
 
 		PlayerPrefs.SetFloat ("gold", currentGold);
-		PlayerPrefs.SetInt ("totalGold", (int)totalGoldEarned);
+		PlayerPrefs.SetFloat ("totalGold", totalGoldEarned);
 
 
 		clickText.text = "Click Total: " + clickTotal;

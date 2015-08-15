@@ -12,9 +12,11 @@ public class GoldPerSec : MonoBehaviour {
 		gameManager = GameObject.Find ("Main Camera").GetComponent<GameManager> ();
 		gPS = GameObject.Find ("GPSText").GetComponent<Text>();
 		StartCoroutine (AutoTick ());
+
 	}
 
 	void Update(){
+
 		gPS.text = GameManager.FormatNumber(GetGoldPerSec()) + " gold/sec";
 	}
 
@@ -28,7 +30,7 @@ public class GoldPerSec : MonoBehaviour {
 
 	public void AutoGoldPerSec(){
 		gameManager.currentGold += GetGoldPerSec() / 10;
-		gameManager.totalGoldEarned += (int)(GetGoldPerSec() / 10);
+		gameManager.totalGoldEarned += GetGoldPerSec() / 10;
 	}
 
 	IEnumerator AutoTick(){

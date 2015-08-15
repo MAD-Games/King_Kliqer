@@ -10,20 +10,22 @@ public class StartGame : MonoBehaviour {
 	}
 	
 	public void OnMouseDownStart() {
-		Application.LoadLevel ("clicker");
+
 		Destroy (this);
+		Application.LoadLevel ("clicker");
+
 	}
 
-	public void OnMouseDownExit() {
-		Application.Quit ();
-	}
+	//public void OnMouseDownExit() {
+	//	Application.Quit ();
+	//}
 
-	public void OnMouseDownTitle()
-	{
+	//public void OnMouseDownTitle()
+	//{
 		//Destroy (gameObject.Find ("Main Camera"));
-		DestroyImmediate(Camera.main.gameObject);
-		Application.LoadLevel ("title-new");
+		//DestroyImmediate(Camera.main.gameObject);
+	//	Application.LoadLevel ("title-new");
 
-	}
+	//}
 
 }
