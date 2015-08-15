@@ -5067,7 +5067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickText: {fileID: 1900896870}
   totalUpgrades: {fileID: 1235278936}
-  totalGold: {fileID: 0}
+  totalGold: {fileID: 2114076927}
   FoodOn: {fileID: 21300000, guid: 47a6d7f5ec95c2d439a594ba803eb0fa, type: 3}
   FoodOff: {fileID: 21300000, guid: 960a9ea65bdb26d4f89411ab3f68b0ef, type: 3}
   HatOn: {fileID: 21300000, guid: fde9bac61ae075640aab4eca70654c0f, type: 3}
