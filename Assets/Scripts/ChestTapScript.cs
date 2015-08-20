@@ -18,15 +18,16 @@ public class ChestTapScript : MonoBehaviour {
 		GPCText = GameObject.Find ("GPCText").GetComponent<Text>();
 		anime = GetComponent<Animator> ();
 		chest = GetComponent<AudioSource> ();
-		if (PlayerPrefs.HasKey ("gps")) {
-			goldPerClick = PlayerPrefs.GetInt ("gps");
+		if (PlayerPrefs.HasKey ("gpc")) {
+			goldPerClick = PlayerPrefs.GetInt ("gpc");
+
 
 		} 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		PlayerPrefs.SetInt ("gps", goldPerClick);
+		PlayerPrefs.SetInt ("gpc", goldPerClick);
 		goldDisplay.text = GameManager.FormatNumber(gameManager.currentGold);
 		GPCText.text = GameManager.FormatNumber(goldPerClick) + " gold/click";
 	}

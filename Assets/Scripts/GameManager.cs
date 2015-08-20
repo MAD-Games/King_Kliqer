@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject hatButton;
 
 	public int upgradeCount;
-	public int clickTotal;
+	public int clickTotal = 0;
 
 	
 	// Use this for initialization
@@ -111,6 +111,7 @@ public class GameManager : MonoBehaviour {
 
 		PlayerPrefs.SetFloat ("gold", currentGold);
 		PlayerPrefs.SetFloat ("totalGold", totalGoldEarned);
+		PlayerPrefs.SetInt ("clicks", clickTotal);
 
 
 		clickText.text = "Click Total: " + clickTotal;
