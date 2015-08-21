@@ -60,6 +60,8 @@
      <Compile Include="Assets\Scripts\WearHat1.cs" />
      <Compile Include="Assets\Scripts\WearHat2.cs" />
      <Compile Include="Assets\Scripts\WearHat3.cs" />
+     <Compile Include="Assets\Scripts\WearHat4.cs" />
+     <Compile Include="Assets\Scripts\WearHat5.cs" />
      <Compile Include="Assets\Scripts\statsMenuDown.cs" />
      <Compile Include="Assets\Scripts\statsMenuUp.cs" />
  <Reference Include="UnityEngine.UI">

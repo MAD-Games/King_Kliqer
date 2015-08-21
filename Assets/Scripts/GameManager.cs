@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour {
 	public int barrelHat;
 	public int mimiHat;
 	public int jackHat;
+	public int birdhouse;
+	public int hookah;
 	
 	// Food counters
 	public int boneFood;
@@ -85,9 +87,11 @@ public class GameManager : MonoBehaviour {
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
 			mimiHat = GameObject.Find ("Nack mimi").GetComponent<ItemManager> ().count;
 			jackHat = GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count;
+			hookah = GameObject.Find ("hookaHat").GetComponent<ItemManager> ().count;
 			cheeseFood = GameObject.Find ("Cheese").GetComponent<UpgradeManager> ().count;
 			boneFood = GameObject.Find ("Bone").GetComponent<UpgradeManager> ().count;
 			grapeFood = GameObject.Find ("Grapes").GetComponent<UpgradeManager> ().count;
+			birdhouse = GameObject.Find("Birdhouse").GetComponent<ItemManager>().count;
 			panelInfo1.gameObject.SetActive (false);
 			panelInfo2.gameObject.SetActive (false);
 			clickText.text = "Click Total: " + clickTotal;
@@ -102,12 +106,14 @@ public class GameManager : MonoBehaviour {
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
 			mimiHat = GameObject.Find ("Nack mimi").GetComponent<ItemManager> ().count;
 			jackHat = GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count;
+			birdhouse = GameObject.Find("Birdhouse").GetComponent<ItemManager>().count;
+			hookah = GameObject.Find ("hookaHat").GetComponent<ItemManager> ().count;
 		} else if (panelInfo1.gameObject.activeInHierarchy == true) {
 			cheeseFood = GameObject.Find ("Cheese").GetComponent<UpgradeManager> ().count;
 			boneFood = GameObject.Find ("Bone").GetComponent<UpgradeManager> ().count;
 			grapeFood = GameObject.Find ("Grapes").GetComponent<UpgradeManager> ().count;
 		}
-		upgradeCount = barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood;
+		upgradeCount = birdhouse + barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood + hookah;
 
 		PlayerPrefs.SetFloat ("gold", currentGold);
 		PlayerPrefs.SetFloat ("totalGold", totalGoldEarned);
@@ -179,14 +185,6 @@ public class GameManager : MonoBehaviour {
 		
 	}
 
-	IEnumerator TestCoroutine(int waitTime)
-	{
-
-
-			Debug.Log("TestCoroutine()");
-			yield return new WaitForSeconds(waitTime);
-
-	}
 
 
 }

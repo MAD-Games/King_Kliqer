@@ -6,6 +6,8 @@ public class CurrentHat : MonoBehaviour {
 	public GameObject hat1;
 	public GameObject hat2;
 	public GameObject hat3;
+	public GameObject hat4;
+	public GameObject hat5;
 	public GameObject HatPosition;
 	private ItemManager itemCount;
 
@@ -15,6 +17,8 @@ public class CurrentHat : MonoBehaviour {
 	bool hat1On;
 	bool hat2On;
 	bool hat3On;
+	bool hat4On;
+	bool hat5On;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +29,8 @@ public class CurrentHat : MonoBehaviour {
 		hat1On = hat1.GetComponent<WearHat1> ().hat1On;
 		hat2On = hat2.GetComponent<WearHat2> ().hat2On;
 		hat3On = hat3.GetComponent<WearHat3> ().hat3On;
+		hat4On = hat4.GetComponent<WearHat4> ().hat4On;
+		hat5On = hat5.GetComponent<WearHat5> ().hat5On;
 		if (hat1On == true) {
 			if(GameObject.Find ("Barrel").GetComponent<ItemManager> ().count >= 0 && 
 			   GameObject.Find ("Barrel").GetComponent<ItemManager> ().count < 10)
@@ -91,39 +97,95 @@ public class CurrentHat : MonoBehaviour {
 
 		}
 		if (hat3On == true) {
-			if(GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count >= 0 && 
-			   GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count < 10)
-			{
-			hat3.GetComponent<WearHat3> ().hat3On = false;
-			hat3On = false;
-			scale = new Vector3 (.8049842f, 1.010508f, 1f);
-			position = new Vector3(0.24f, 4.5f, -1f);
-			transform.localPosition = position;
-			transform.localScale = scale;
-			}
-			else if(GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count >= 10 && 
-			   GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count < 25)
-			{
+			if (GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count >= 0 && 
+				GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count < 10) {
 				hat3.GetComponent<WearHat3> ().hat3On = false;
 				hat3On = false;
 				scale = new Vector3 (.8049842f, 1.010508f, 1f);
-				position = new Vector3(0.24f, 4.5f, -1f);
+				position = new Vector3 (0.24f, 4.5f, -1f);
 				transform.localPosition = position;
 				transform.localScale = scale;
-			}
-			else
-			{
+			} else if (GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count >= 10 && 
+				GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count < 25) {
 				hat3.GetComponent<WearHat3> ().hat3On = false;
 				hat3On = false;
 				scale = new Vector3 (.8049842f, 1.010508f, 1f);
-				position = new Vector3(0.62f, 4.78f, -1f);
+				position = new Vector3 (0.24f, 4.5f, -1f);
+				transform.localPosition = position;
+				transform.localScale = scale;
+			} else {
+				hat3.GetComponent<WearHat3> ().hat3On = false;
+				hat3On = false;
+				scale = new Vector3 (.8049842f, 1.010508f, 1f);
+				position = new Vector3 (0.62f, 4.78f, -1f);
 				transform.localPosition = position;
 				transform.localScale = scale;
 			}
+		}
+
+			if (hat4On == true) {
+			if (GameObject.Find ("Birdhouse").GetComponent<ItemManager> ().count >= 0 && 
+				GameObject.Find ("Birdhouse").GetComponent<ItemManager> ().count < 10) {
+				hat4.GetComponent<WearHat4> ().hat4On = false;
+				Debug.Log("hello");
+				hat4On = false;
+				scale = new Vector3 (1.068358f, 1.0063f, 1f);
+				position = new Vector3 (.44f, 4.62f, -0.32f);
+				transform.localPosition = position;
+				transform.localScale = scale;
+			} else if (GameObject.Find ("Birdhouse").GetComponent<ItemManager> ().count >= 10 && 
+				GameObject.Find ("Birdhouse").GetComponent<ItemManager> ().count < 25) {
+				hat4.GetComponent<WearHat4> ().hat4On = false;
+				hat4On = false;
+				scale = new Vector3 (1.068358f, 1.0063f, 1f);
+				position = new Vector3 (0.2f, 4.9f, -0.32f);
+				transform.localPosition = position;
+				transform.localScale = scale;
+			} else {
+				hat4.GetComponent<WearHat4> ().hat4On = false;
+				hat4On = false;
+				scale = new Vector3 (1.068358f, 1.0063f, 1f);
+				position = new Vector3 (0.2f, 4.9f, -0.32f);
+				transform.localPosition = position;
+				transform.localScale = scale;
+			}
+		}
+
+				if (hat5On == true) {
+					if(GameObject.Find ("hookaHat").GetComponent<ItemManager> ().count >= 0 && 
+					   GameObject.Find ("hookaHat").GetComponent<ItemManager> ().count < 10)
+					{
+						hat5.GetComponent<WearHat5> ().hat5On = false;
+						hat5On = false;
+						scale = new Vector3 (1.068358f, 1.0063f, 1f);
+						position = new Vector3(0.2f, 1.93f, -0.32f);
+						transform.localPosition = position;
+						transform.localScale = scale;
+					}
+					else if(GameObject.Find ("hookaHat").GetComponent<ItemManager> ().count >= 10 && 
+					        GameObject.Find ("hookaHat").GetComponent<ItemManager> ().count < 25)
+					{
+						hat5.GetComponent<WearHat5> ().hat5On = false;
+						hat5On = false;
+						scale = new Vector3 (1.068358f, 1.0063f, 1f);
+						position = new Vector3(0.65f, 2.26f, -0.32f);
+						transform.localPosition = position;
+						transform.localScale = scale;
+					}
+					else
+					{
+						hat5.GetComponent<WearHat5> ().hat5On = false;
+						hat5On = false;
+						scale = new Vector3 (1.068358f, 1.0063f, 1f);
+						position = new Vector3(0.44f, 1.89f, -0.32f);
+						transform.localPosition = position;
+						transform.localScale = scale;
+					}
 			//Debug.Log("hat3");
 
-
+			}
+			
 		}
 	
-	}
+
 }
