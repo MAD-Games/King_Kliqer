@@ -73,8 +73,8 @@ public class CurrentHat : MonoBehaviour {
 			{
 			hat2.GetComponent<WearHat2> ().hat2On = false;
 			hat2On = false;
-			scale = new Vector3 (.8978831f, 1.072058f, 1f);
-			position = new Vector3(0.12f, 3.27f, -1f);
+				scale = new Vector3 (1.0683581f, 1.10064f, 1f);
+			position = new Vector3(0.27f, 3.21f, -.32f);
 			transform.localPosition = position;
 			transform.localScale = scale;
 			}
@@ -83,16 +83,16 @@ public class CurrentHat : MonoBehaviour {
 			{
 				hat2.GetComponent<WearHat2> ().hat2On = false;
 				hat2On = false;
-				scale = new Vector3 (.8978831f, 1.072058f, 1f);
-				position = new Vector3(0.17f, 3.46f, -1f);
+				scale = new Vector3 (1.068358f, 1.10064f, 1f);
+				position = new Vector3(0.31f, 3.53f, -.32f);
 				transform.localPosition = position;
 				transform.localScale = scale;
 			}
 			else{
 				hat2.GetComponent<WearHat2> ().hat2On = false;
 				hat2On = false;
-				scale = new Vector3 (.897007f, 1.010508f, 1f);
-				position = new Vector3(0.05f, 3.25f, -1f);
+				scale = new Vector3 (1.068358f, 1.10064f, 1f);
+				position = new Vector3(0.21f, 3.22f, -.32f);
 				transform.localPosition = position;
 				transform.localScale = scale;
 			}
