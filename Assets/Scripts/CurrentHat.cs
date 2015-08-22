@@ -14,11 +14,11 @@ public class CurrentHat : MonoBehaviour {
 	Vector3 scale;
 	Vector3 position;
 
-	bool hat1On;
-	bool hat2On;
-	bool hat3On;
-	bool hat4On;
-	bool hat5On;
+	bool hat1On =false;
+	bool hat2On = false;
+	bool hat3On = false;
+	bool hat4On = false;
+	bool hat5On = false;
 
 	// Use this for initialization
 	void Start () {
@@ -32,19 +32,22 @@ public class CurrentHat : MonoBehaviour {
 		hat4On = hat4.GetComponent<WearHat4> ().hat4On;
 		hat5On = hat5.GetComponent<WearHat5> ().hat5On;
 		if (hat1On == true) {
-			if(GameObject.Find ("Barrel").GetComponent<ItemManager> ().count >= 0 && 
-			   GameObject.Find ("Barrel").GetComponent<ItemManager> ().count < 10)
+
+			if(GameObject.Find("Barrel").GetComponent<ItemManager>().count >= 0 &
+			   GameObject.Find("Barrel").GetComponent<ItemManager> ().count < 10)
 			{
-			hat1.GetComponent<WearHat1> ().hat1On = false;
-			hat1On = false;
-			scale = new Vector3 (.8049842f, 1.010508f, 1f);
-			position = new Vector3(0.07f, 2.41f, -1f);
-			transform.localScale = scale;
-			transform.localPosition = position;
+				Debug.Log ("hello");
+				hat1.GetComponent<WearHat1> ().hat1On = false;
+				hat1On = false;
+				scale = new Vector3 (.8049842f, 1.010508f, 1f);
+				position = new Vector3(0.07f, 2.41f, -1f);
+				transform.localScale = scale;
+				transform.localPosition = position;
 			}
 			else if(GameObject.Find ("Barrel").GetComponent<ItemManager> ().count >= 10 && 
 			   GameObject.Find ("Barrel").GetComponent<ItemManager> ().count < 25)
 			{
+				Debug.Log ("hello");
 				hat1.GetComponent<WearHat1> ().hat1On = false;
 				hat1On = false;
 				scale = new Vector3 (.8049842f, 1.010508f, 1f);
@@ -61,7 +64,7 @@ public class CurrentHat : MonoBehaviour {
 				transform.localScale = scale;
 				transform.localPosition = position;
 			}
-			//Debug.Log("hat1");
+			Debug.Log("hat1");
 
 		}
 		if (hat2On == true) {

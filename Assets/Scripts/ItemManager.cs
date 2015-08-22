@@ -18,6 +18,9 @@ public class ItemManager : MonoBehaviour {
 	public Color Standard;
 	public Color Affordable;
 	private Slider ColorChange;
+	public int hatNumber;
+	public int whichHat;
+
 
 
 	void Start(){
@@ -28,6 +31,9 @@ public class ItemManager : MonoBehaviour {
 			count = PlayerPrefs.GetInt (itemName);
 			Cost = PlayerPrefs.GetFloat(itemName + "Cost");
 		} 
+
+	
+
 	}
 
 	void Update(){
@@ -50,11 +56,63 @@ public class ItemManager : MonoBehaviour {
 		}
 
 		if (count < 10) {
-			GameObject.Find(itemName + "Icon").GetComponent<SpriteRenderer>().sprite = icons[0];
+			hatNumber = 0;
+			if(whichHat == 1){
+			GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat1>().hats[0];
+			}
+			if(whichHat == 2){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat2>().hats[0];
+			}
+			if(whichHat == 3){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat3>().hats[0];
+			}
+			if(whichHat == 4){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat4>().hats[0];
+			}
+			if(whichHat == 5){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat5>().hats[0];
+			}
+
+				
+				//this.gameObject.GetComponent<Image>().sprite = Resources.Load ("newImage") as Image;
+			
+
 		} else if ((count >= 10) & (count < 25)) {
-			GameObject.Find(itemName + "Icon").GetComponent<SpriteRenderer>().sprite = icons[1];
-		} else if ((count >= 25) & (count < 50)) {
-			GameObject.Find(itemName + "Icon").GetComponent<SpriteRenderer>().sprite = icons[2];
+			if(whichHat == 1){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat1>().hats[1];
+			}
+			if(whichHat == 2){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat2>().hats[1];
+			}
+			if(whichHat == 3){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat3>().hats[1];
+			}
+			if(whichHat == 4){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat4>().hats[1];
+			}
+			if(whichHat == 5){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat5>().hats[1];
+			}
+			//GameObject.Find(itemName + "Icon").GetComponent<SpriteRenderer>().sprite = icons[1];
+			hatNumber = 1;
+		} else if ((count >= 25)) {
+			if(whichHat == 1){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat1>().hats[2];
+			}
+			if(whichHat == 2){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat2>().hats[2];
+			}
+			if(whichHat == 3){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat3>().hats[2];
+			}
+			if(whichHat == 4){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat4>().hats[2];
+			}
+			if(whichHat == 5){
+				GameObject.Find(itemName + "Icon").GetComponent<Image>().sprite = GameObject.Find(itemName + "Icon").GetComponent<WearHat5>().hats[2];
+			}
+			//GameObject.Find(itemName + "Icon").GetComponent<SpriteRenderer>().sprite = icons[2];
+			hatNumber = 2;
 		}
 		ColorChange.value = gameManager.currentGold / Cost * 100;
 	}
@@ -66,4 +124,9 @@ public class ItemManager : MonoBehaviour {
 			Cost = Mathf.Round(baseCost * Mathf.Pow (1.15f, count));
 		}
 	}
-}
+
+
+	}
+
+
+

@@ -1,12 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CurrentHat.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\WearHat4.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="128" Column="143" />
       <File FileName="Assets\Scripts\WearHat5.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CurrentHat.cs" Line="133" Column="39" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="188" Column="2" />
-      <File FileName="Assets\Scripts\ItemManager.cs" Line="55" Column="1" />
+      <File FileName="Assets\Scripts\ItemManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CurrentHat.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\WearHat3.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\WearHat2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\WearHat1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\WearHat4.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

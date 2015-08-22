@@ -39,6 +39,9 @@ public class GameManager : MonoBehaviour {
 	public int boneFood;
 	public int cheeseFood;
 	public int grapeFood;
+	public int snailFood;
+	public int boneMeatFood;
+	public int donutFood;
 
 	//public Sprite image;
 	
@@ -92,6 +95,9 @@ public class GameManager : MonoBehaviour {
 			boneFood = GameObject.Find ("Bone").GetComponent<UpgradeManager> ().count;
 			grapeFood = GameObject.Find ("Grapes").GetComponent<UpgradeManager> ().count;
 			birdhouse = GameObject.Find("Birdhouse").GetComponent<ItemManager>().count;
+			boneMeatFood = GameObject.Find ("boneMeat").GetComponent<UpgradeManager> ().count;
+			snailFood = GameObject.Find ("snail").GetComponent<UpgradeManager> ().count;
+			donutFood = GameObject.Find ("donut").GetComponent<UpgradeManager> ().count;
 			panelInfo1.gameObject.SetActive (false);
 			panelInfo2.gameObject.SetActive (false);
 			clickText.text = "Click Total: " + clickTotal;
@@ -100,9 +106,10 @@ public class GameManager : MonoBehaviour {
 
 		}
 
-
+		Debug.Log (panelInfo1.gameObject.activeInHierarchy);
 		//PlayerPrefs.SetInt ("hat1", barrelHat);
 		if (panelInfo2.gameObject.activeInHierarchy == true) {
+			Debug.Log(barrelHat);
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
 			mimiHat = GameObject.Find ("Nack mimi").GetComponent<ItemManager> ().count;
 			jackHat = GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count;
@@ -112,8 +119,13 @@ public class GameManager : MonoBehaviour {
 			cheeseFood = GameObject.Find ("Cheese").GetComponent<UpgradeManager> ().count;
 			boneFood = GameObject.Find ("Bone").GetComponent<UpgradeManager> ().count;
 			grapeFood = GameObject.Find ("Grapes").GetComponent<UpgradeManager> ().count;
+			boneMeatFood = GameObject.Find ("boneMeat").GetComponent<UpgradeManager> ().count;
+			snailFood = GameObject.Find ("snail").GetComponent<UpgradeManager> ().count;
+			donutFood = GameObject.Find ("donut").GetComponent<UpgradeManager> ().count;
+
+			Debug.Log(grapeFood);
 		}
-		upgradeCount = birdhouse + barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood + hookah;
+		upgradeCount = birdhouse + barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood + hookah + snailFood + boneMeatFood + donutFood;
 
 		PlayerPrefs.SetFloat ("gold", currentGold);
 		PlayerPrefs.SetFloat ("totalGold", totalGoldEarned);
