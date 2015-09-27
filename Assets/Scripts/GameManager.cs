@@ -106,10 +106,10 @@ public class GameManager : MonoBehaviour {
 
 		}
 
-		Debug.Log (panelInfo1.gameObject.activeInHierarchy);
+		//Debug.Log (panelInfo1.gameObject.activeInHierarchy);
 		//PlayerPrefs.SetInt ("hat1", barrelHat);
 		if (panelInfo2.gameObject.activeInHierarchy == true) {
-			Debug.Log(barrelHat);
+			//Debug.Log(barrelHat);
 			barrelHat = GameObject.Find ("Barrel").GetComponent<ItemManager> ().count;
 			mimiHat = GameObject.Find ("Nack mimi").GetComponent<ItemManager> ().count;
 			jackHat = GameObject.Find ("Jack ripper").GetComponent<ItemManager> ().count;
@@ -123,7 +123,7 @@ public class GameManager : MonoBehaviour {
 			snailFood = GameObject.Find ("snail").GetComponent<UpgradeManager> ().count;
 			donutFood = GameObject.Find ("donut").GetComponent<UpgradeManager> ().count;
 
-			Debug.Log(grapeFood);
+			//Debug.Log(grapeFood);
 		}
 		upgradeCount = birdhouse + barrelHat + mimiHat + jackHat + cheeseFood + grapeFood + boneFood + hookah + snailFood + boneMeatFood + donutFood;
 
