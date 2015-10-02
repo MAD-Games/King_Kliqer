@@ -1,16 +1,22 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 
 public class ItemManager : MonoBehaviour {
 
 	public Text itemInfo;
 	public Text itemCost;
 	public Text goldIncome;
+	private MultiplierScript multi;
 	private GameManager gameManager;
 	private CurrentHat currentHat;
 	public Sprite[] icons;
 	public float Cost;
+	public float endCost;
 	public int tickValue;
 	public int count;
 	public string itemName;
@@ -20,6 +26,7 @@ public class ItemManager : MonoBehaviour {
 	private Slider ColorChange;
 	public int hatNumber;
 	public int whichHat;
+	private int multiply;
 
 
 
@@ -31,6 +38,7 @@ public class ItemManager : MonoBehaviour {
 			count = PlayerPrefs.GetInt (itemName);
 			Cost = PlayerPrefs.GetFloat(itemName + "Cost");
 		} 
+		multi = GameObject.Find ("UpgradeMultiplier").GetComponent<MultiplierScript> ();
 
 	
 
@@ -42,7 +50,22 @@ public class ItemManager : MonoBehaviour {
 
 		//itemInfo.text = itemName + "\nCost: " + Cost + "\nUpgrades: (" + count + ")" + "\nIncome: " + tickValue + " gold/s";
 		itemInfo.text = itemName + " (" + count + ")";
-		itemCost.text = GameManager.FormatNumber (Cost);
+
+		//calculates cost w/ multiplier
+		endCost = Cost * multi.multiplier;
+
+		multiply = multi.multiplier;
+		multiply = multiply * (int)Cost;
+		if (multi.multiplier == 1) {
+			itemCost.text = "1X      " + GameManager.FormatNumber (multiply);
+		}
+		if (multi.multiplier == 10) {
+			itemCost.text = "10X     " + GameManager.FormatNumber (multiply);
+		}
+		if (multi.multiplier == 100) {
+			itemCost.text = "100X    " + GameManager.FormatNumber (multiply);
+		}
+	//itemCost.text = GameManager.FormatNumber (Cost);
 		goldIncome.text = "Income: " + tickValue;
 		/*if (Click.Gold >= Cost) {
 			GetComponent<Image> ().color = Affordable;
@@ -114,14 +137,14 @@ public class ItemManager : MonoBehaviour {
 			//GameObject.Find(itemName + "Icon").GetComponent<SpriteRenderer>().sprite = icons[2];
 			hatNumber = 2;
 		}
-		ColorChange.value = gameManager.currentGold / Cost * 100;
+		ColorChange.value = gameManager.currentGold / (Cost * multi.multiplier) * 100;
 	}
 
 	public void OnMouseDown(){
-		if (gameManager.currentGold >= Cost) {
-			gameManager.currentGold -= Cost;
-			count += 1;
-			Cost = Mathf.Round(baseCost * Mathf.Pow (1.15f, count));
+		if (gameManager.currentGold >= endCost) {
+			gameManager.currentGold -= endCost;
+			count += multi.multiplier;
+			Cost = (Mathf.Round(baseCost * Mathf.Pow (1.15f, count)) * multi.multiplier);
 		}
 	}
 

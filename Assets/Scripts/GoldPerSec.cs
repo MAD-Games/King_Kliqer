@@ -25,6 +25,7 @@ public class GoldPerSec : MonoBehaviour {
 		foreach (ItemManager item in items) {
 			tick += item.count * item.tickValue;
 		}
+		//Debug.Log (tick);
 		return tick;
 	}
 

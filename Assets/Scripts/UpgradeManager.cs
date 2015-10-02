@@ -1,16 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 
 public class UpgradeManager : MonoBehaviour {
 
 	
 	private GameManager gameManager;
 	private ChestTapScript chestTap;
+	private MultiplierScript multi;
 	public Text iteminfo;
 	public Text itemCost;
 	public Text goldPerClick;
 	public float cost;
+	public float endCost;
 	public int count;
 	public int gPC;
 	public float gpcDisplay;
@@ -19,14 +25,16 @@ public class UpgradeManager : MonoBehaviour {
 	public Color Standard;
 	public Color Affordable;
 	public Slider SliderColor;
+	private int multiply;
 	AudioSource levelUp;
 
 	void Start(){
 		chestTap = GameObject.Find ("Chest").GetComponent<ChestTapScript> ();
 		gameManager = GameObject.Find ("Main Camera").GetComponent<GameManager> ();
+		multi = GameObject.Find ("UpgradeMultiplier").GetComponent<MultiplierScript> ();
 		levelUp = this.GetComponent<AudioSource> ();
 		gpcDisplay = gPC / (float)1000;
-		baseCost = cost;
+		baseCost = (cost * multi.multiplier);
 		SliderColor = GetComponentInChildren<Slider> ();
 
 		if (PlayerPrefs.HasKey (ItemName)) {
@@ -41,8 +49,23 @@ public class UpgradeManager : MonoBehaviour {
 		PlayerPrefs.SetFloat(ItemName + " Cost", cost);
 
 		//Debug.Log (gpcDisplay);
+
 		iteminfo.text = ItemName + " (" + count + ")";
-		itemCost.text = GameManager.FormatNumber (cost);
+
+		//calculates cost w/ multiplier
+		endCost = cost * multi.multiplier;
+
+		multiply = multi.multiplier;
+		multiply = multiply * (int)cost;
+		if (multi.multiplier == 1) {
+			itemCost.text = "1X      " + GameManager.FormatNumber (multiply);
+		}
+		if (multi.multiplier == 10) {
+			itemCost.text = "10X     " + GameManager.FormatNumber (multiply);
+		}
+		if (multi.multiplier == 100) {
+			itemCost.text = "100X    " + GameManager.FormatNumber (multiply);
+		}
 		goldPerClick.text = "Fat%: " + gpcDisplay;
 
 		/*if (Click.Gold >= Cost) {
@@ -55,15 +78,15 @@ public class UpgradeManager : MonoBehaviour {
 		} else {
 			GetComponent<Image> ().color = Standard;
 		}
-		SliderColor.value = gameManager.currentGold / cost * 100;
+		SliderColor.value = gameManager.currentGold / (cost * multi.multiplier) * 100;
 	}
 
 	public void OnMouseDown(){
-		if (gameManager.currentGold >= cost) {
-			gameManager.currentGold -= cost;
-			count += 1;
-			chestTap.goldPerClick += gPC;
-			cost = Mathf.Round (baseCost * Mathf.Pow(1.15f, count));
+		if (gameManager.currentGold >= endCost) {
+			gameManager.currentGold -= endCost;
+			count += multi.multiplier;
+			chestTap.goldPerClick += multi.multiplier;
+			cost = (Mathf.Round (baseCost * Mathf.Pow(1.15f, count)) * multi.multiplier);
 			levelUp.Play();
 		}
 	}
