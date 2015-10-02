@@ -60,10 +60,10 @@ public class ItemManager : MonoBehaviour {
 			itemCost.text = "1X      " + GameManager.FormatNumber (multiply);
 		}
 		if (multi.multiplier == 10) {
-			itemCost.text = "10X     " + GameManager.FormatNumber (multiply);
+			itemCost.text = "10X      " + GameManager.FormatNumber (multiply);
 		}
 		if (multi.multiplier == 100) {
-			itemCost.text = "100X    " + GameManager.FormatNumber (multiply);
+			itemCost.text = "100X      " + GameManager.FormatNumber (multiply);
 		}
 	//itemCost.text = GameManager.FormatNumber (Cost);
 		goldIncome.text = "Income: " + tickValue;
