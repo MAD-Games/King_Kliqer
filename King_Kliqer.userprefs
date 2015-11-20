@@ -1,14 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ItemManager.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\The Revered\Assets\Scripts\Classes\MainCharacterClass.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UpgradeManager.cs" Line="79" Column="44" />
-      <File FileName="Assets\Scripts\WearHat1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MultiplierScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ItemManager.cs" Line="66" Column="24" />
-      <File FileName="Assets\Scripts\GoldPerSec.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ChestTapScript.cs" Line="1" Column="1" />
+      <File FileName="..\The Revered\Assets\Scripts\Classes\MainCharacterClass.cs" Line="26" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
